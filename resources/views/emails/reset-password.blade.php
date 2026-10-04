@@ -1,0 +1,1 @@
+<h1>Restablece tu contraseña</h1><p>Hola, {{ $user->name }}. Recibimos una solicitud para cambiar tu contraseña.</p><p><a href="{{ $url }}" style="background:#2563eb;color:#fff;padding:12px 18px;text-decoration:none;border-radius:6px">Crear nueva contraseña</a></p><p>Este enlace vence en {{ $expires }} minutos. Si no solicitaste este cambio, puedes ignorar este mensaje.</p>

@@ -1,0 +1,4 @@
+<h1>¡Tu pedido fue confirmado!</h1>
+<p>Hola, {{ $user->name }}. Recibimos correctamente tu pago para el pedido <strong>{{ $order->provider_reference }}</strong>.</p>
+<table width="100%" cellpadding="8" cellspacing="0" style="border-collapse:collapse;border:1px solid #e5e7eb"><thead><tr style="background:#f8fafc"><th align="left">Producto</th><th align="center">Cantidad</th><th align="right">Total</th></tr></thead><tbody>@foreach($order->items as $item)<tr><td>{{ $item->product_name }}</td><td align="center">{{ $item->quantity }}</td><td align="right">${{ number_format($item->line_total, 0, ',', '.') }} COP</td></tr>@endforeach</tbody></table>
+<p><strong>Total pagado: ${{ number_format($order->total, 0, ',', '.') }} COP</strong></p><p>Enviaremos tu pedido a: {{ $order->shipping_address['address'] }}.</p><p>Gracias por comprar en {{ config('app.name') }}.</p>

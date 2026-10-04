@@ -1,0 +1,1 @@
+<h1>Hola, {{ $user->name }}</h1><p>Gracias por crear tu cuenta. Confirma tu correo electrónico para protegerla y habilitar el checkout.</p><p><a href="{{ $url }}" style="background:#2563eb;color:#fff;padding:12px 18px;text-decoration:none;border-radius:6px">Verificar mi correo</a></p><p>Si no creaste esta cuenta, puedes ignorar este mensaje.</p>
